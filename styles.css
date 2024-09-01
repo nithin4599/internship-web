@@ -1046,3 +1046,29 @@ ul li {
         font-size: 1.5vw; /* Adjust list item size */
     }
 }
+
+
+.highlighted-text {
+    background-color: #cde4ff; /* Light yellow background color */
+    color: #043185; /* Dark yellow text color */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.1em; /* Slightly larger text */
+    line-height: 1.5; /* Increase line-height for readability */
+}
+.button-link {
+    display: inline-block; /* Make the link behave like a block-level element */
+    padding: 10px 20px; /* Add padding for button-like appearance */
+    font-size: 16px; /* Adjust font size */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text inside the button */
+    text-decoration: none; /* Remove underline from the link */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.button-link:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
