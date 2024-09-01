@@ -12,14 +12,12 @@ body {
 @font-face {
     font-family: rejouice;
     src: url(./fonts/Rejouice-Headline.ttf);
-<<<<<<< HEAD
 }
-video::-webkit-media-controls-fullscreen-button
-{
-        display: none !important;
-=======
->>>>>>> f79d9ad53de281ce1b4ff6a3d6ee9490d608d9e3
+
+video::-webkit-media-controls-fullscreen-button {
+    display: none !important;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -33,8 +31,8 @@ html, body {
 }
 
 #loader {
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     position: fixed;
     top: 0;
     background: #000;
@@ -42,30 +40,27 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     color: #fff;
 }
 #loader h3 {
     font-size: 3vw;
 }
+
 #page1 {
-    height:80vh;
-    width:100%;
+    height: 80vh;
+    width: 100%;
     position: relative;
 }
 @media (max-width: 768px) {
     #page1 {
         height: 100vh;
         width: 100%;
-        margin-left: -10px;
-        /* Adjust any other styles specific to the phone view */
-        padding: 10px; /* Example adjustment */
-        margin-top: -360px;
-        /* margin-bottom: -320px; */
+        margin: 0; /* Reset margin */
+        padding: 0; /* Reset padding */
     }
 }
 #cursor {
-    height:3.5vw;
+    height: 3.5vw;
     width: 3.5vw;
     background-color: rgb(32, 57, 138);
     border-radius: 50%;
@@ -80,6 +75,7 @@ html, body {
     font-size: 1.15vw;
     font-weight: 500;
 }
+
 /* Default styles for larger screens */
 #page1 video {
     height: 100%;
@@ -96,7 +92,7 @@ html, body {
     z-index: 10;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center; /* Center vertically */
 }
 
 /* Styles for phone view */
@@ -109,7 +105,7 @@ html, body {
 
     #page1-content {
         flex-direction: column; /* Stack content vertically */
-        padding: 10px; /* Add some padding for better readability */
+        padding: 0; /* Reset padding */
         text-align: center; /* Center-align text for smaller screens */
     }
 }
@@ -133,13 +129,13 @@ nav h4 {
 #page1-content h1 {
     font-family: rejouice;
     font-size: 27vw;
-    line-height :27vw;
+    line-height: 27vw;
     font-weight: 100;
 }
 #page1-content span {
     font-family: rejouice;
-    display: inline-block;}
-
+    display: inline-block;
+}
 
 /* Base Styles */
 #page2 {
@@ -156,10 +152,9 @@ nav h4 {
     display: flex;
     padding: 2.8vw;
     padding-bottom: 1vw;
-    height: 21vh;
+    height: auto; /* Adjust height */
     width: 100%;
-    align-items: flex-end;
-    overflow: hidden;
+    align-items: center; /* Center align items */
     justify-content: space-between;
 }
 
@@ -200,13 +195,11 @@ ul li {
 
 /* Responsive Styles for Phone View */
 @media (max-width: 768px) {
-    
     #page2>#nav {
         flex-direction: column;
-        height: auto;
-        align-items: center;
         padding: 4vw 2vw;
-        
+        align-items: center;
+        height: auto; /* Adjust height */
     }
 
     #page2>#nav>.elem h1 {
@@ -217,7 +210,6 @@ ul li {
 
     hr {
         width: 90vw; /* Adjust width for smaller screens */
-        
     }
 
     #page2>.heading {
@@ -271,7 +263,7 @@ ul li {
     justify-content: space-between; /* Distribute space between items */
     align-items: center;
     width: 100%;
-    margin-top: 4vw; /* Adjust margin for better spacing */
+    margin-top: 0; /* Reset margin-top */
 }
 
 #page3-elements .box {
@@ -306,8 +298,7 @@ ul li {
 @media (max-width: 768px) {
     #page3 {
         padding: 4vw 2vw; /* Adjust padding for smaller screens */
-        margin-top: -600px;
-        /* margin-bottom: -700px; */
+        margin: 0; /* Reset margin-top and margin-bottom */
     }
 
     #page3-top h4 {
