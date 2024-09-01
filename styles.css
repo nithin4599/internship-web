@@ -61,7 +61,7 @@ html, body {
         /* Adjust any other styles specific to the phone view */
         padding: 10px; /* Example adjustment */
         margin-top: -360px;
-        margin-bottom: -320px;
+        /* margin-bottom: -320px; */
     }
 }
 #cursor {
@@ -307,7 +307,7 @@ ul li {
     #page3 {
         padding: 4vw 2vw; /* Adjust padding for smaller screens */
         margin-top: -600px;
-        margin-bottom: -700px;
+        /* margin-bottom: -700px; */
     }
 
     #page3-top h4 {
