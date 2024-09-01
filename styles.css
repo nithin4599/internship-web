@@ -1115,3 +1115,12 @@ ul li {
 .button-link:hover {
     background-color: #0056b3; /* Darker background color on hover */
 }
+
+/* Responsive Styles for Phone View */
+@media (max-width: 768px) {
+    .button-link {
+        padding: 6px 8px; /* Adjust padding for smaller screens */
+        font-size: 5px; /* Slightly smaller font size */
+    }
+}
+
