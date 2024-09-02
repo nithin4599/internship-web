@@ -297,9 +297,10 @@ ul li {
 }
 
 /* Responsive Styles for Phone View */
+/* Responsive Styles for Phone View */
 @media (max-width: 768px) {
     #page3 {
-        padding: 8vw 4vw; /* Further increased top padding for smaller screens */
+        padding: 8vw 4vw; /* Maintain increased top padding for smaller screens */
         margin-bottom: -120px;
     }
 
@@ -317,13 +318,13 @@ ul li {
 
     #page3-elements {
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap; /* Prevent wrapping to keep items in a single row */
     }
 
     #page3-elements .box {
-        flex: 1 1 48%;
-        max-width: 48%;
-        height: 40vh; /* Increased height for smaller screens */
+        flex: 1 1 33%; /* Adjust flex properties to ensure three boxes per row */
+        max-width: 33%; /* Ensure each box takes up one-third of the row */
+        height: 40vh; /* Adjust height for smaller screens */
     }
 }
 
