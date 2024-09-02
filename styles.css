@@ -506,11 +506,12 @@ ul li {
 /* Responsive Styles for Phone View */
 /* Media query for small phones (up to 480px) */
 /* Media query for larger phones (up to 768px) */
+/* Media query for larger phones (up to 768px) */
 @media (max-width: 768px) {
     #page3 {
         padding: 8vw 4vw; /* Maintain increased top padding for smaller screens */
         margin-bottom: 300px; /* Ensure ample space between sections */
-        margin-top: -200px; /* Adjusted margin for better spacing */
+        margin-top: -300px; /* Adjusted margin for better spacing */
     }
 
     #page3-top h4 {
@@ -536,6 +537,40 @@ ul li {
         width: 768px; /* Adjust width for larger phones */
         height: 30vh; /* Adjust height for better visibility */
         margin-bottom: 8vw; /* Increased margin between boxes */
+    }
+}
+
+/* Media query for smaller phones (up to 480px) */
+@media (max-width: 480px) {
+    #page3 {
+        padding: 10vw 4vw; /* Increase padding for smaller screens */
+        margin-bottom: 200px; /* Adjust margin for smaller screens */
+        margin-top: -100px; /* Adjust margin for better spacing */
+    }
+
+    #page3-top h4 {
+        font-size: 3vw; /* Larger font size for better readability */
+    }
+
+    #page3-top span {
+        font-size: 2vw; /* Larger font size for better readability */
+    }
+
+    #page3-top h2 {
+        font-size: 7vw; /* Increase font size for better visibility */
+    }
+
+    #page3-elements {
+        flex-direction: column; /* Stack items vertically */
+        flex-wrap: nowrap; /* Prevent wrapping to ensure items stack in a single column */
+    }
+
+    #page3-elements .box {
+        flex: 1 1 auto; /* Allow boxes to take up available space */
+        max-width: 100%; /* Ensure each box takes up full width */
+        width: 100%; /* Adjust width to full width for small phones */
+        height: 25vh; /* Further adjust height for smaller screens */
+        margin-bottom: 10vw; /* Increased margin between boxes */
     }
 }
 
