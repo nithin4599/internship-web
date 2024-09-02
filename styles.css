@@ -50,15 +50,15 @@ html, body {
     height: 80vh;
     width: 100%;
     position: relative;
+    padding: 0; /* Ensure no padding is applied */
+    margin: 0; /* Reset margins */
 }
 @media (max-width: 768px) {
     #page1 {
-        height: 100vh;
+        height: 40vh;
         width: 100%;
-        margin: 0; /* Reset margin */
-        padding: 0; /* Reset padding */
-        margin-bottom: -150px;
-        margin-top: -100px;
+        padding: 0; /* Ensure no padding is applied */
+        margin: 0; /* Reset margins */
     }
 }
 #cursor {
@@ -139,264 +139,6 @@ nav h4 {
     display: inline-block;
 }
 
-/* Base Styles */
-#page2 {
-    height: 108vh;
-    width: 100%;
-    background: #FAF8F3;
-    color: #0E0E0E;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Navigation Bar */
-#page2>#nav {
-    display: flex;
-    padding: 2.8vw;
-    padding-bottom: 1vw;
-    height: auto; /* Adjust height */
-    width: 100%;
-    align-items: center; /* Center align items */
-    justify-content: space-between;
-}
-
-hr {
-    width: 94.4vw;
-    margin: 0 auto;
-    justify-content: center;
-}
-/* Ensure that the bullets are aligned to the left */
-ul {
-    list-style-position: inside; /* Ensures bullets are inside the padding area */
-    padding-left: 0; /* Remove default padding */
-    margin-left: 0; /* Remove default margin */
-}
-
-ul li {
-    padding-left: 1.5vw; /* Add padding for better readability */
-    text-align: left; /* Ensure text is aligned to the left */
-}
-
-/* Navigation Elements */
-#page2>#nav>.elem h1 {
-    align-items: baseline;
-    font-family: nb;
-    font-size: 1.67vw;
-    font-weight: 100;
-}
-
-/* Heading Section */
-#page2>.heading {
-    padding: 2.8vw;
-}
-
-#page2>.heading h1 {
-    font-size: 4.2vw;
-    font-weight: 500;
-}
-
-/* Responsive Styles for Phone View */
-@media (max-width: 768px) {
-    #page2>#nav {
-        flex-direction: column;
-        padding: 4vw 2vw;
-        align-items: center;
-        height: auto; /* Adjust height */
-        margin-top: 100px;
-    }
-
-    #page2>#nav>.elem h1 {
-        font-size: 5vw; /* Increase font size for readability */
-        text-align: center;
-        margin-bottom: 2vw;
-    }
-
-    hr {
-        width: 90vw; /* Adjust width for smaller screens */
-    }
-
-    #page2>.heading {
-        padding: 4vw 2vw; /* Adjust padding for smaller screens */
-        text-align: center; /* Center text for smaller screens */
-    }
-
-    #page2>.heading h1 {
-        font-size: 6vw; /* Increase font size for better visibility */
-    }
-}
-
-#space {
-    margin-left: 8vw;
-}
-
-/* Base Styles for Page 3 */#page3 {
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-    padding: 6vw 4vw; /* Increased top padding to avoid collision */
-}
-
-#page3-top {
-    text-align: center;
-}
-
-#page3-top h4 {
-    margin-bottom: 2vw;
-    font-size: 2vw;
-    font-weight: 500;
-}
-
-#page3-top span {
-    font-size: 1.5vw;
-    background-color: #000;
-    color: #fff;
-    padding: 4px 8px;
-    border-radius: 10px;
-}
-
-#page3-top h2 {
-    font-size: 5vw;
-    font-weight: 500;
-}
-
-#page3-elements {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 2vw; /* Add margin-top to separate from top elements */
-}
-
-#page3-elements .box {
-    flex: 1 1 30%;
-    max-width: 32%;
-    height: 75vh; /* Increased height for better visibility */
-    position: relative;
-    margin-bottom: 2vw;
-}
-
-#page3-elements .box video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-#page3-elements .box img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: absolute;
-    transition: all linear 0.7s;
-}
-
-#page3-elements > .box:hover img {
-    opacity: 0;
-}
-
-/* Responsive Styles for Phone View */
-/* Responsive Styles for Phone View */
-@media (max-width: 768px) {
-    #page3 {
-        padding: 8vw 4vw; /* Maintain increased top padding for smaller screens */
-        margin-bottom: -120px;
-    }
-
-    #page3-top h4 {
-        font-size: 2.5vw;
-    }
-
-    #page3-top span {
-        font-size: 1.8vw;
-    }
-
-    #page3-top h2 {
-        font-size: 6vw;
-    }
-
-    #page3-elements {
-        flex-direction: row;
-        flex-wrap: nowrap; /* Prevent wrapping to keep items in a single row */
-    }
-
-    #page3-elements .box {
-        flex: 1 1 33%; /* Adjust flex properties to ensure three boxes per row */
-        max-width: 33%; /* Ensure each box takes up one-third of the row */
-        height: 40vh; /* Adjust height for smaller screens */
-    }
-}
-
-
-
-#page4 {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#page4 a {
-    color: #fff;
-    padding: 5vw;
-    font-size: larger;
-    font-weight: bolder;
-    text-decoration: none;
-}
-#page4-top {
-    position: absolute;
-    z-index: 2;
-}
-#page4 video {
-    width: 50%;
-}
-#page4 svg {
-    position: absolute;
-    height:65%;
-}
-
-#page5 {
-    height: 100vh;
-    width:100%;
-}
-#page5 h1 {
-    font-size: 10vw;
-    font-family: rejouice;
-    font-weight: 100;
-    border-bottom: 1px solid #000;
-    width :96%;
-    margin-left: 2%;
-    margin-bottom: -3vw;
-}
-#page5 #swiperdiv {
-    position: relative;
-    height: 100vh;
-}
-
-.swiper {
-    width: 100vw;
-}
-
-.swiper-slide img{
-    width:100%;
-}
-.swiper-wrapper {
-    align-items:baseline;
-    position: absolute;
-    z-index: 10;
-}
-/* <--cads --> */
-
-/* Container Styles */
-
-
-
-
-
-/* Container Styles */
-/* Container Styles */
 #form-container {
     background-color: #FAF8F3;
     padding: 3vw;
@@ -598,6 +340,292 @@ ul li {
 }
 
 
+
+/* Base Styles */
+#page2 {
+    height: 108vh;
+    width: 100%;
+    background: #FAF8F3;
+    color: #0E0E0E;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+#page2>#nav {
+    display: flex;
+    padding: 2.8vw;
+    padding-bottom: 1vw;
+    height: auto; /* Adjust height */
+    width: 100%;
+    align-items: center; /* Center align items */
+    justify-content: space-between;
+}
+
+hr {
+    width: 94.4vw;
+    margin: 0 auto;
+    justify-content: center;
+}
+/* Ensure that the bullets are aligned to the left */
+ul {
+    list-style-position: inside; /* Ensures bullets are inside the padding area */
+    padding-left: 0; /* Remove default padding */
+    margin-left: 0; /* Remove default margin */
+}
+
+ul li {
+    padding-left: 1.5vw; /* Add padding for better readability */
+    text-align: left; /* Ensure text is aligned to the left */
+}
+
+/* Navigation Elements */
+#page2>#nav>.elem h1 {
+    align-items: baseline;
+    font-family: nb;
+    font-size: 1.67vw;
+    font-weight: 100;
+}
+
+/* Heading Section */
+#page2>.heading {
+    padding: 2.8vw;
+}
+
+#page2>.heading h1 {
+    font-size: 4.2vw;
+    font-weight: 500;
+}
+
+/* Responsive Styles for Phone View */
+@media (max-width: 768px) {
+    #page2>#nav {
+        flex-direction: column;
+        padding: 4vw 2vw;
+        align-items: center;
+        height: auto; /* Adjust height */
+        margin-top: 100px;
+    }
+
+    #page2>#nav>.elem h1 {
+        font-size: 5vw; /* Increase font size for readability */
+        text-align: center;
+        margin-bottom: 2vw;
+    }
+
+    hr {
+        width: 90vw; /* Adjust width for smaller screens */
+    }
+
+    #page2>.heading {
+        padding: 4vw 2vw; /* Adjust padding for smaller screens */
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    #page2>.heading h1 {
+        font-size: 6vw; /* Increase font size for better visibility */
+    }
+}
+
+#space {
+    margin-left: 8vw;
+}
+/* Base Styles for Page 3 */
+/* Base Styles for Page 3 */
+/* Base Styles for Page 3 */
+/* Base Styles for Page 3 */
+/* Base Styles for Page 3 */
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 6vw 4vw; /* Increased top padding to avoid collision */
+   /* Doubled margin to ensure ample space between #page3 and #page4 */
+}
+
+#page3-top {
+    text-align: center;
+}
+
+#page3-top h4 {
+    margin-bottom: 2vw;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+#page3-top span {
+    font-size: 1.5vw;
+    background-color: #000;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+#page3-top h2 {
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+#page3-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 2vw; /* Add margin-top to separate from top elements */
+}
+
+#page3-elements .box {
+    flex: 1 1 30%;
+    max-width: 32%;
+    height: 75vh; /* Increased height for better visibility */
+    position: relative;
+    margin-bottom: 4vw; /* Increased margin to separate boxes */
+}
+
+#page3-elements .box video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page3-elements .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    transition: all linear 0.7s;
+}
+
+#page3-elements > .box:hover img {
+    opacity: 0;
+}
+
+/* Responsive Styles for Phone View */
+@media (max-width: 768px) {
+    #page3 {
+        padding: 8vw 4vw; /* Maintain increased top padding for smaller screens */
+        margin-bottom: 300px; /* Doubled margin to ensure ample space between sections */
+        margin-top: -200px;
+    
+    }
+
+    #page3-top h4 {
+        font-size: 2.5vw;
+    }
+
+    #page3-top span {
+        font-size: 1.8vw;
+    }
+
+    #page3-top h2 {
+        font-size: 6vw;
+    }
+
+    #page3-elements {
+        flex-direction: column; /* Stack items vertically */
+        flex-wrap: nowrap; /* Prevent wrapping to ensure items stack in a single column */
+    }
+
+    #page3-elements .box {
+        flex: 1 1 auto; /* Allow boxes to take up available space */
+        max-width: 100%; /* Ensure each box takes up full width */
+        width: 768px;
+        height: 30vh; /* Adjust height for smaller screens */
+        margin-bottom: 8vw; /* Increased margin between boxes */
+    }
+}
+
+/* Base Styles for Page 4 */
+#page4 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0; /* Reset margin to avoid overlap */
+}
+
+/* Add additional margin to separate from the previous section */
+#page4::before {
+    content: "";
+    display: block;
+    height: 300px; /* Doubled height for more space */
+    width: 100%;
+}
+
+#page4 a {
+    color: #fff;
+    padding: 5vw;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#page4-top {
+    position: absolute;
+    z-index: 2;
+}
+
+#page4 video {
+    width: 50%;
+}
+
+#page4 svg {
+    position: absolute;
+    height: 65%;
+}
+
+/* Base Styles for Page 5 */
+#page5 {
+    height: 100vh;
+    width: 100%;
+}
+
+#page5 h1 {
+    font-size: 10vw;
+    font-family: rejouice;
+    font-weight: 100;
+    border-bottom: 1px solid #000;
+    width: 96%;
+    margin-left: 2%;
+    margin-bottom: -3vw;
+}
+
+#page5 #swiperdiv {
+    position: relative;
+    height: 100vh;
+}
+
+.swiper {
+    width: 100vw;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    align-items: baseline;
+    position: absolute;
+    z-index: 10;
+}
+
+
+
+/* <--cads --> */
+
+/* Container Styles */
+
+
+
+
+
+/* Container Styles */
+/* Container Styles */
 
 
 
