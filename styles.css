@@ -94,7 +94,7 @@ html, body {
     z-index: 10;
     align-items: center;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
+   
 }
 
 /* Styles for phone view */
