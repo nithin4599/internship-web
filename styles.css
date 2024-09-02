@@ -508,7 +508,7 @@ ul li {
     #page3 {
         padding: 8vw 4vw; /* Maintain increased top padding for smaller screens */
         margin-bottom: 300px; /* Doubled margin to ensure ample space between sections */
-        margin-top: auto;
+        margin-top: -130px;
     
     }
 
