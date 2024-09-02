@@ -229,12 +229,11 @@ ul li {
     margin-left: 8vw;
 }
 
-/* Base Styles for Page 3 */
-#page3 {
+/* Base Styles for Page 3 */#page3 {
     min-height: 100vh;
     width: 100%;
     position: relative;
-    padding: 4vw; /* Adjust padding for smaller screens */
+    padding: 6vw 4vw; /* Increased top padding to avoid collision */
 }
 
 #page3-top {
@@ -242,39 +241,39 @@ ul li {
 }
 
 #page3-top h4 {
-    margin-bottom: 2vw; /* Increase margin for readability on smaller screens */
-    font-size: 2vw; /* Adjust font size for better readability */
+    margin-bottom: 2vw;
+    font-size: 2vw;
     font-weight: 500;
 }
 
 #page3-top span {
-    font-size: 1.5vw; /* Increase font size for readability */
+    font-size: 1.5vw;
     background-color: #000;
     color: #fff;
-    padding: 4px 8px; /* Adjust padding */
+    padding: 4px 8px;
     border-radius: 10px;
 }
 
 #page3-top h2 {
-    font-size: 5vw; /* Increase font size for visibility on smaller screens */
+    font-size: 5vw;
     font-weight: 500;
 }
 
 #page3-elements {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap if necessary */
-    justify-content: space-between; /* Distribute space between items */
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 0; /* Reset margin-top */
+    margin-top: 2vw; /* Add margin-top to separate from top elements */
 }
 
 #page3-elements .box {
-    flex: 1 1 30%; /* Adjust flex properties for responsive behavior */
-    max-width: 32%; /* Limit max width to keep boxes in row */
-    height: 40vh; /* Adjust height for better fit */
+    flex: 1 1 30%;
+    max-width: 32%;
+    height: 75vh; /* Increased height for better visibility */
     position: relative;
-    margin-bottom: 2vw; /* Add margin between boxes */
+    margin-bottom: 2vw;
 }
 
 #page3-elements .box video {
@@ -293,42 +292,41 @@ ul li {
     transition: all linear 0.7s;
 }
 
-#page3-elements>.box:hover img {
+#page3-elements > .box:hover img {
     opacity: 0;
 }
 
 /* Responsive Styles for Phone View */
 @media (max-width: 768px) {
     #page3 {
-        padding: 4vw 2vw; /* Adjust padding for smaller screens */
-        margin: 0; /* Reset margin-top and margin-bottom */
+        padding: 8vw 4vw; /* Further increased top padding for smaller screens */
         margin-bottom: -120px;
-      
     }
 
     #page3-top h4 {
-        font-size: 2.5vw; /* Increase font size for better readability */
+        font-size: 2.5vw;
     }
 
     #page3-top span {
-        font-size: 1.8vw; /* Adjust font size */
+        font-size: 1.8vw;
     }
 
     #page3-top h2 {
-        font-size: 6vw; /* Increase font size for better visibility */
+        font-size: 6vw;
     }
 
     #page3-elements {
-        flex-direction: row; /* Keep items in a row */
-        flex-wrap: wrap; /* Allow items to wrap if needed */
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     #page3-elements .box {
-        flex: 1 1 30%; /* Adjust flex properties */
-        max-width: 30%; /* Adjust max width for better fit */
-        height: 30vh; /* Adjust height for smaller screens */
+        flex: 1 1 48%;
+        max-width: 48%;
+        height: 40vh; /* Increased height for smaller screens */
     }
 }
+
 
 
 #page4 {
@@ -390,6 +388,13 @@ ul li {
 }
 /* <--cads --> */
 
+/* Container Styles */
+
+
+
+
+
+/* Container Styles */
 /* Container Styles */
 #form-container {
     background-color: #FAF8F3;
@@ -476,12 +481,11 @@ ul li {
 
 #right-form {
     width: 50%;
-    background-color: #FAF8F3;
+    background-color: #d0d0d0;
     padding: 2vw;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
-
 
 #left-content {
     width: 45%;
@@ -514,7 +518,6 @@ ul li {
     margin-bottom: 0;
 }
 
-
 /* Input Alignment Fix */
 .form-group input,
 .form-group select,
@@ -528,11 +531,70 @@ ul li {
     box-sizing: border-box;
 }
 
+/* Responsive Styles for Phone View */
+@media (max-width: 768px) {
+    /* Adjust container padding and width */
+    #form-container {
+        padding: 5vw;
+        max-width: 95%;
+    }
 
+    /* Adjust heading font size */
+    #form-container h1 {
+        font-size: 6vw;
+        margin-bottom: 4vw;
+    }
 
+    /* Adjust form group margins and font sizes */
+    .form-group {
+        margin-bottom: 3vw;
+    }
 
+    .form-group label {
+        font-size: 3vw;
+        margin-bottom: 1.5vw;
+    }
 
+    .form-control,
+    .form-check-input,
+    .btn {
+        font-size: 3vw;
+        padding: 4vw;
+    }
 
+    /* Adjust layout for phone view */
+    #content-wrapper {
+        display: block;
+    }
+
+    #left-content, 
+    #right-form {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #left-content h2, 
+    #left-content h3 {
+        font-size: 4vw;
+    }
+
+    #left-content p {
+        font-size: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    /* Button adjustments */
+    .btn {
+        margin-top: 3vw;
+    }
+
+    /* Increase input box height and reduce width */
+    .form-control {
+        font-size: 5vw;
+        padding: 6vw 4vw; /* Increased height (padding-top/bottom) */
+        width: 80%; /* Reduced width */
+    }
+}
 
 
 
@@ -701,37 +763,33 @@ ul li {
         margin-bottom: 2vw; /* Increase space between list items */
     }
 }
-
-/* Projects Box Styles */
+/* Projects Box Styles *//* Projects Box Styles */
 .projects-box1 {
     background-color: #fef9f4; /* Light cream background for a notice feel */
     border: 2px solid #b5d1ff; /* Slightly thicker border with a light yellow color */
     border-radius: 10px; /* Rounded corners for a softer look */
     padding: 2vw; /* Padding around the text */
-    margin: 2vw auto; /* Centered with space above and below */
+    margin: 2vw 0 2vw 1vw; /* Move the box more to the left */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for emphasis */
     font-family: nb; /* Consistent font with the rest of the content */
     color: #0E0E0E; /* Dark text color for readability */
     font-size: 1.4vw; /* Slightly smaller font size */
-    max-width: 80%; /* Reduce width to make it more compact */
-    position: relative; /* For positioning the icon */
+    max-width: 100%; /* Reduce width to make it more compact */
+    position: relative; /* Maintain positioning */
+    margin-left: -1px;
+    display: block; /* Change back to block-level element */
 }
 
-/* Add a notice icon */
+/* Remove the icon styling */
 .projects-box1::before {
-     /* Example icon, you can use a different one if needed */
-    font-size: 2vw; /* Size of the icon */
-    position: absolute;
-    top: 50%;
-    left: 1vw;
-    transform: translateY(-50%); /* Center icon vertically */
+    content: none; /* Remove the icon */
 }
 
 /* Paragraph Styling */
 .projects-box1 p {
     margin: 0; /* Remove default margin from the paragraph */
     line-height: 1.6; /* Increase line height for better readability */
-    padding-left: 3vw; /* Add space for the icon */
+    text-align: left; /* Align text to the left */
 }
 
 /* Responsive Styles */
@@ -740,9 +798,11 @@ ul li {
         padding: 3vw; /* Adjust padding for smaller screens */
         font-size: 1.8vw; /* Adjust font size for readability */
         max-width: 90%; /* Increase width slightly on smaller screens */
+        margin-left: -1px; /* Move box slightly more to the left on smaller screens */
+
     }
 }
-/* Add-Ons Section Styles */
+
 
 
 
@@ -1008,6 +1068,7 @@ ul li {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+ 
 }
 
 .footer-left p {
